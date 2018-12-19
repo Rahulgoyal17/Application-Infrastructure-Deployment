@@ -1,6 +1,6 @@
 ---
 - name: Install nginx webserver
-  hosts: {{ webserver }}
+  hosts: all
   become: true
 
   tasks:
