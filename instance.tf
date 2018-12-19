@@ -12,6 +12,7 @@ module "ec2_cluster" {
   instance_type          = "t2.micro"
   key_name               = "terraform"
   monitoring             = true
+  associate_public_ip_address = true
   vpc_security_group_ids = ["sg-f3d17885"]
   subnet_id              = "subnet-a8d0dccc"
 
