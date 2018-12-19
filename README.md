@@ -1,4 +1,4 @@
-# Terrafrom-aws-challenge
+# Application-Infrastructure-Deployment
 Repository For Terrafrom-aws-challenge
 
 1) To launch EC2 server using terraform. 
