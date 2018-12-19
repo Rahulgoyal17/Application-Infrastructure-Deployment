@@ -4,15 +4,8 @@
   become: true
 
   tasks:
-  - name: Add epel-release Repo
-    yum:
-      name: epel-release
-      state: present
-
   - name: Install Nginx Package
-    yum:
-      name: nginx
-      state: present
+    shell: amazon-linux-extras install nginx1.12 -y
 
   - name: Insert Webpage Page
     template:
