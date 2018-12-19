@@ -17,6 +17,8 @@ module "ec2_cluster" {
   vpc_security_group_ids = ["sg-f3d17885"]
   subnet_id              = "subnet-a8d0dccc"
 
+ 
+
   tags = {
     Terraform = "true"
     Environment = "dev"
