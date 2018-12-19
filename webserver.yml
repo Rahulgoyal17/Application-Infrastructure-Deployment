@@ -1,7 +1,7 @@
 ---
 - name: Install nginx webserver
   hosts: all
-  become: true
+  become: yes
 
   tasks:
   - name: Install Nginx Package
