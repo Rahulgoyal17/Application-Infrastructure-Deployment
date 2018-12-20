@@ -1,5 +1,5 @@
 # Application-Infrastructure-Deployment
-Repository For Terrafrom-aws-challenge
+
 
 1) To launch EC2 server using terraform. 
    I am using EC2 module so that I can use (re-use) same module for diffrent environment and application.
