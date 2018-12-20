@@ -15,6 +15,7 @@ module "ec2_cluster" {
   associate_public_ip_address = true
   vpc_security_group_ids = ["sg-f3d17885"]
   subnet_id              = "subnet-a8d0dccc"
+  user_data = "${data.template_file.user_data_server.rendered}"
 
  
 
@@ -23,4 +24,9 @@ module "ec2_cluster" {
     Environment = "PROD"
     Application = "Hello-World"
   }
+}
+
+  data "template_file" "user_data_server" {
+  template = "${file("${path.module}/user-data-server.sh")}"
+
 }
