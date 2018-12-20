@@ -8,7 +8,7 @@ module "ec2_cluster" {
   name                   = "Application-Server"
   instance_count         = 1
 
-  ami                    = "ami-0e620df67baa52cfd"
+  ami                    = "ami-0d677dc122bc2b5e3"
   instance_type          = "t2.micro"
   key_name               = "terraform"
   monitoring             = true
