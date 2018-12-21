@@ -1,3 +1,0 @@
-[webservers]
-webserver ansible_host=172.31.14.9
-
